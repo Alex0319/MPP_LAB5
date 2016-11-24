@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace STM
 {
-    class StmLoggerRealization
+    public interface IStmUnmanagedClone
     {
+        object StmUnmanagedClone();
     }
 }

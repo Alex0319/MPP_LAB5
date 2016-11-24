@@ -1,12 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace STM
 {
-    interface IStmTransaction
+    public interface IStmTransaction
     {
+        void Begin();
+        bool TryCommit();
+        void Rollback();
+        void TryAddComponent(IStmRef stmRef, StmRefSavedState stmRefSavedState);
     }
 }
