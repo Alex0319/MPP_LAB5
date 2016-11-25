@@ -100,10 +100,7 @@ namespace UnitTestProject
             using (var variable = new StmRef<int>(5))
             {
                 int[] checkValue = new int[2];
-                var testStmTransaciton = new TestStmTransaction[2] {
-        new TestStmTransaction(new StmTransaction()),
-        new TestStmTransaction(new StmTransaction())
-      };
+                var testStmTransaciton = new TestStmTransaction[2] { new TestStmTransaction(new StmTransaction()), new TestStmTransaction(new StmTransaction()) };
                 var taskFirst = Task.Run(() =>
                 {
                     Stm.Do(() =>

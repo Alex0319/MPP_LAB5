@@ -36,7 +36,7 @@ namespace UnitTestProject
             stmTransation.Rollback();
         }
 
-        public void TryAddComponent(IStmRef stmRef, StmRefSavedState stmRefSavedState)
+        public void TryAddComponent(IStmRef stmRef, StmRefSaved stmRefSavedState)
         {
             stmTransation.TryAddComponent(stmRef, stmRefSavedState);
         }
